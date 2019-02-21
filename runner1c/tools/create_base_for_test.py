@@ -141,6 +141,7 @@ def _create_base_click():
                  '--folder', REPO.get()]
     if CREATE_EPF.get():
         arguments.append('--create_epf')
+        arguments.append('--create_tests')
     if THICK_CLIENT.get():
         arguments.append('--thick')
     if CREATE_CFE.get() and not CFE_NAME.get():
